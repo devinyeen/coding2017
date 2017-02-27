@@ -3,7 +3,8 @@
  */
 package com.coding.basic.container.test;
 
-import java.util.List;
+import com.coding.basic.container.ArrayList;
+import com.coding.basic.container.List;
 
 /**
  * @author devin.yin
@@ -15,7 +16,7 @@ public class TestContainer {
      * @param args
      */
     public static void main(String[] args) {
-        List<String> list1 = new java.util.ArrayList<String>();
+        java.util.List<String> list1 = new java.util.ArrayList<String>();
         System.out.println(list1);
 
         // 4 basic operation for java.util.ArrayList--add remove change query
@@ -45,7 +46,7 @@ public class TestContainer {
         System.out.println("------------------------------------------------");
 
         // 4 basic operation for com.coding.basic.container.ArrayList--add remove change query
-        com.coding.basic.container.ArrayList<String> list2 = new com.coding.basic.container.ArrayList<String>();
+        List list2 = new ArrayList();
         System.out.println(list2);
         list2.add("0");
         list2.add("1");

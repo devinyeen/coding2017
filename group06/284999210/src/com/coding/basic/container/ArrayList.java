@@ -52,7 +52,6 @@ public class ArrayList implements List {
         size++;
     }
 
-    @SuppressWarnings("unchecked")
     public Object remove(int index) {
         checkIndex(index);
 
@@ -60,8 +59,7 @@ public class ArrayList implements List {
         for (int i = index; i < size; i++) {
             elementData[i] = elementData[i + 1];
         }
-        elementData[size] = null;
-        size = size - 1;
+        elementData[size--] = null;
         return o;
     }
 
@@ -79,7 +77,6 @@ public class ArrayList implements List {
         return o;
     }
 
-    @SuppressWarnings("unchecked")
     public Object get(int index) {
         checkIndex(index);
 
