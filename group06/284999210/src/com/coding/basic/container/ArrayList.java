@@ -127,8 +127,7 @@ public class ArrayList implements List {
         for (int i = findIndex; i < size - 1; i++) {
             elementData[i] = elementData[i + 1];
         }
-        elementData[size - 1] = null;
-        size--;
+        elementData[--size] = null;
         return false;
     }
 

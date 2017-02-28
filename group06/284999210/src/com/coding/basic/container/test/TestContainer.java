@@ -21,6 +21,7 @@ public class TestContainer {
 
         // 4 basic operation for java.util.ArrayList--add remove change query
         list1.add("0");
+        System.out.println(list1.get(1));
         list1.add("1");
         list1.add("2");
         list1.add("3");
